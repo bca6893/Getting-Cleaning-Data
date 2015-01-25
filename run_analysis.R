@@ -52,15 +52,9 @@ multi_gsub(to_replace, replace_with, full_dataset)
 
 full_dataset$activity <- cut(full_dataset$activity, breaks = c(0, 1, 2, 3, 4, 5, 6), labels = c("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING","STANDING", "LAYING")) 
 
-## 5. With the final tidied dataset, create a dataset of averages and write markdown files ### 
+## 5. With the final tidied dataset, create a dataset of averages ### 
 
 dataset_averages <- (aggregate(. ~subject_id + activity, full_dataset, mean))
 dataset_averages <- dataset_averages[order(dataset_averages$subject_id, dataset_averages$activity), ]
 
 write.table(dataset_averages, file = "dataset_averages.txt", row.names = F)
-
-knit2html("C:/Users/Perrier/Desktop/Getting and Cleaning Data/Course Project/UCI HAR Dataset/Run_Analysis Codebook.Rmd")
-
-knit2html("C:/Users/Perrier/Desktop/Getting and Cleaning Data/Course Project/UCI HAR Dataset/Run_Analysis README.Rmd")
-
-knit2html("C:/Users/Perrier/Desktop/Getting and Cleaning Data/Course Project/UCI HAR Dataset/example_output.Rmd")
