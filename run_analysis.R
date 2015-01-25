@@ -1,7 +1,6 @@
 setwd("C:/Users/Perrier/Desktop/Getting and Cleaning Data/Course Project/UCI HAR Dataset")
 require(data.table)
 require(dplyr)
-require(knitr)
 options(digits = 3)
 
 ### 1. Read in all files of interest and combine relevant data ###
