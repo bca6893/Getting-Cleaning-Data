@@ -1,5 +1,7 @@
 <h2>Run_Analysis README</h2>
 
+<p><em>For the original README from the UCI HAR Dataset, please go here: https://github.com/bca6893/Getting-Cleaning-Data/blob/master/README.txt</em>
+
 <p>The run_analysis script uses data collected from an experiment measuring smartphone recognition of human activity. The abstract and citation of this experiment are also included here.</p>
 
 <p>In brief, the data of interest for this script are the subject identifiers (n = 30),  activity labels and names (n = 6), mean and standard deviation variables for each signal (n = 66) and their averages (n = 180). Further description of all variables are available in the codebook.</p>
