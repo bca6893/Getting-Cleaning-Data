@@ -1,6 +1,4 @@
----
-title: "Run_Analysis Codebook"
----
+<h4>Run_Analysis Codebook</h4>
 This script performs a number of steps to accomplish the goal of tidy data. The purpose of each variable for each step are described here.
 
 (Note: Packages utilized include the data.table and ddply.)
