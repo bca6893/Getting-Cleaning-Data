@@ -1,4 +1,4 @@
-<h2>Run_Analysis README</h2>
+<h4>Run_Analysis README</h4>
 
 <p><em>For the original README from the UCI HAR Dataset, please go here: https://github.com/bca6893/Getting-Cleaning-Data/blob/master/README.txt</em>
 
