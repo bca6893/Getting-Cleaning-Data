@@ -39,7 +39,10 @@ multi_gsub <- function(old_names, to_set, data, set_sub, ...) {
    }
 
 multi_gsub(to_replace, replace_with, full_dataset)
-full_dataset$activity <- cut(full_dataset$activity, breaks = c(0, 1, 2, 3, 4, 5, 6), labels = c("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING","STANDING", "LAYING")) 
+
+full_dataset$activity <- cut(full_dataset$activity, 
+breaks = c(0, 1, 2, 3, 4, 5, 6), 
+labels = c("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING","STANDING", "LAYING")) 
 
 ## 5. With the final tidied dataset, create a dataset of averages ### 
 dataset_averages <- (aggregate(. ~subject_id + activity, full_dataset, mean))
